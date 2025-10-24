@@ -9,7 +9,15 @@ alias nvim="lvim"
 #takes port number and searches for name of processes using the port then pipelines it to xargs (kinda like tee) and runs kill on those processes
 findandkill() { lsof -t -i tcp:$1 | xargs kill }
 alias killport=findandkill
-alias pest=./vendor/bin/pest
+
+#create public Git + GitHub repo from current dir
+alias ghinit='git init && git add . && git commit -m "Initial commit" && gh repo create "$(basename "$PWD")" --source=. --public --push'
+#create private Git + GitHub repo from current dir
+alias ghinitpriv='git init && git add . && git commit -m "Initial commit" && gh repo create "$(basename "$PWD")" --source=. --private --push'
+#create GitHub repo only (no auto push)
+alias ghempty='git init && gh repo create "$(basename "$PWD")" --source=. --public'
+#same but private
+alias ghemptypriv='git init && gh repo create "$(basename "$PWD")" --source=. --private'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
