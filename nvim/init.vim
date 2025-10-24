@@ -1,0 +1,2 @@
+command! Clear let @/ = ""
+
