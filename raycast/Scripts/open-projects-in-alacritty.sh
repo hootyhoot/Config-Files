@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Open Projects
+# @raycast.title Open Projects in Alacritty
 # @raycast.mode silent
 
 # Optional parameters:
