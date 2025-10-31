@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Open Current Finder Folder
+# @raycast.title Open Current Finder Folder in Alacritty
 # @raycast.mode silent
 
 # Optional parameters:
