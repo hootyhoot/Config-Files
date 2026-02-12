@@ -24,7 +24,7 @@ on run
     end if
   end tell
 
-  set shellCommand to "/Users/mikhail/.npm-global/bin/claude -c || /Users/mikhail/.npm-global/bin/claude; exec zsh"
+  set shellCommand to "/opt/homebrew/bin/claude -c || /opt/homebrew/bin/claude; exec zsh"
 
   -- Launch Claude Code inside Alacritty
   do shell script "/opt/homebrew/bin/alacritty --working-directory " & quoted form of dirPath & " -e zsh -c " & quoted form of shellCommand & " >/dev/null 2>&1 &"
